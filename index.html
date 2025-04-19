@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apiario Céspedes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="loader" id="loader">
+  <div class="spinner"></div>
+</div>
+
+<nav class="navbar">
+  <div class="logo">Apiario CÉSPEDES</div>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#nosotros"><i class="fas fa-leaf"></i> Nosotros</a></li>
+    <li><a href="#productos"><i class="fas fa-box"></i> Productos</a></li>
+    <li><a href="#galeria"><i class="fas fa-image"></i> Galería</a></li>
+    <li><a href="#faq"><i class="fas fa-question-circle"></i> Preguntas</a></li>
+    <li><a href="#testimonios"><i class="fas fa-comment-dots"></i> Testimonios</a></li>
+    <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+  </ul>
+</nav>
+
+<header>
+  <img src="assets/images/logo-cespedes1.png" alt="Logo Apiario Céspedes" style="max-width: 150px; margin-bottom: 10px;">
+  <h1>CÉSPEDES – Miel natural del Trópico de Cochabamba</h1>
+  <p>100% pura, artesanal y hecha con amor</p>
+  <a href="#productos" class="btn">Ver nuestros productos</a>
+</header>
+
+<section class="section" id="nosotros">
+  <h2>Nuestra Historia</h2>
+  <p>
+    En Apiario Céspedes cultivamos miel natural desde el corazón del Trópico de Cochabamba, Bolivia.
+    Somos una familia que trabaja con dedicación, respetando los ciclos de la naturaleza y cuidando cada colmena con esmero.
+    Nuestra miel es cosechada de forma artesanal, sin aditivos, y con el sabor auténtico que solo la tierra puede dar.
+    Cada frasco representa nuestra identidad: tradicional, honesta y hecha con alma.
+  </p>
+</section>
+
+<section class="section" id="productos">
+  <h2>Nuestros Productos</h2>
+  <div class="productos">
+    <!--- <div class="producto">
+      <img src="assets/images/frasco-1000g.png" alt="Miel 500g" />
+      <h3>Miel Céspedes 500g</h3>
+      <p>Miel natural y pura. Envase práctico y elegante.</p>
+      <button onclick="mostrarMensaje()">Lo quiero</button>
+    </div> --->
+
+    <div class="product-card">
+      <h3>Miel de Abeja 500g</h3>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/frasco-500g.png" alt="Frasco 500g Frente">
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/images/frasco-back.png" alt="Frasco 500g Atrás">
+          </div>
+        </div>
+      </div>
+      <p>Perfecto para el consumo familiar diario, práctico y fácil de usar.</p>
+    </div>
+
+
+
+    <div class="producto">
+      <img src="assets/images/frasco-1000g.png" alt="Miel 1000g" />
+      <h3>Miel Céspedes 1000g</h3>
+      <p>Formato familiar. El sabor del trópico en cada cucharada.</p>
+      <button onclick="mostrarMensaje()">Lo quiero</button>
+    </div>
+    <div class="producto">
+      <img src="assets/images/frasco-2000g.png" alt="Miel 2000g" />
+      <h3>Miel Céspedes 2000g</h3>
+      <p>Ideal para consumo frecuente o compartir.</p>
+      <button onclick="mostrarMensaje()">Lo quiero</button>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="faq">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq-item">
+    <h3>¿La miel es 100% natural?</h3>
+    <p>Sí, nuestra miel proviene directamente del trópico de Cochabamba sin procesos industriales.</p>
+  </div>
+  <div class="faq-item">
+    <h3>¿Cómo puedo hacer un pedido?</h3>
+    <p>Puedes contactarnos por WhatsApp o mediante el formulario de contacto para realizar tu pedido.</p>
+  </div>
+  <div class="faq-item">
+    <h3>¿En qué presentaciones viene?</h3>
+    <p>Contamos con frascos de 500g, 1000g y 2000g.</p>
+  </div>
+  <div class="faq-item">
+    <h3>¿Dónde se encuentra Apiario Céspedes?</h3>
+    <p>Estamos ubicados en el trópico de Cochabamba, Bolivia.</p>
+  </div>
+</section>
+
+
+<section class="section" id="video">
+  <h2>Conoce Nuestro Apiario</h2>
+  <div class="video-container">
+    <video controls>
+      <source src="ruta/a/tu-video.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  </div>
+</section>
+
+<section class="section" id="formulario-contacto">
+  <h2>Contáctanos</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <textarea placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+<section class="section" id="contacto">
+  <h2>Contacto</h2>
+  <form action="mailto:tuemail@dominio.com" method="post" enctype="text/plain">
+    <input type="text" name="nombre" placeholder="Tu nombre" required />
+    <input type="text" name="contacto" placeholder="Correo o WhatsApp" required />
+    <textarea name="mensaje" rows="5" placeholder="Mensaje..."></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>Apiario Céspedes © 2025</p>
+
+<section class="section" id="galeria">
+  <h2>Galería</h2>
+  <div class="galeria">
+    <img src="assets/images/recoleccion.png" alt="Colmena natural" />
+    <img src="assets/images/recoleccion.png" alt="Recolección de miel" />
+    <img src="assets/images/recoleccion.png" alt="Producto final" />
+  </div>
+</section>
+<section class="section" id="testimonios">
+  <h2>Testimonios</h2>
+  <div class="testimonios">
+    <blockquote>
+      <p>"La mejor miel que he probado, auténtica y deliciosa."</p>
+      <footer>– Carla M., Cochabamba
+    </blockquote>
+    <blockquote>
+      <p>"El sabor es increíble, y el frasco es muy práctico."</p>
+      <footer>– Juan C., Santa Cruz
+    </blockquote>
+    <blockquote>
+      <p>"Se nota que es una miel hecha con cuidado. ¡Me encantó!"</p>
+      <footer>– Daniela R., La Paz
+    </blockquote>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".faq-item h3");
+    items.forEach(item => {
+      item.addEventListener("click", () => {
+        const p = item.nextElementSibling;
+        p.style.display = (p.style.display === "block") ? "none" : "block";
+      });
+    });
+
+    // Inicialmente ocultar todos los párrafos
+    document.querySelectorAll(".faq-item p").forEach(p => p.style.display = "none");
+  });
+</script>
+
+
+<a href="https://wa.me/59167521705?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20su%20miel" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Apiario Céspedes. Todos los derechos reservados.</p>
+    <p>📍 Trópico de Cochabamba, Bolivia | ☎️ +591 71234567</p>
+    <div class="social-icons">
+      <a href="https://facebook.com/apiarioCespedes" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/apiario_cespedes" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/59167521705?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20su%20miel" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".faq-item h3");
+    items.forEach(item => {
+      item.addEventListener("click", () => {
+        const p = item.nextElementSibling;
+        p.style.display = (p.style.display === "block") ? "none" : "block";
+      });
+    });
+
+    // Inicialmente ocultar todos los párrafos
+    document.querySelectorAll(".faq-item p").forEach(p => p.style.display = "none");
+  });
+</script>
+
+
+<a href="https://wa.me/59167521705?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20su%20miel" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
