@@ -49,6 +49,34 @@ header p {
   transform: scale(1.05);
 }
 
+.historia-contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.historia-texto {
+  flex: 1;
+}
+
+.historia-texto p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.historia-imagen {
+  flex: 1;
+  max-width: 400px;
+}
+
+.historia-imagen img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 .section {
   padding: 40px 20px;
   max-width: 900px;
