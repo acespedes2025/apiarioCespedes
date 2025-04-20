@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apiario Céspedes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -45,47 +44,56 @@
 
 <section class="section" id="productos">
   <h2>Nuestros Productos</h2>
-  <div class="productos">
-    <!--- <div class="producto">
-      <img src="assets/images/frasco-1000g.png" alt="Miel 500g" />
-      <h3>Miel Céspedes 500g</h3>
-      <p>Miel natural y pura. Envase práctico y elegante.</p>
-      <button onclick="mostrarMensaje()">Lo quiero</button>
-    </div> --->
-
+  <div class="productos-container">
     <div class="product-card">
       <h3>Miel de Abeja 500g</h3>
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="assets/images/frasco-500g.png" alt="Frasco 500g Frente">
+            <img src="assets/images/frasco-500g.png" alt="Frasco de miel 500g - frente">
           </div>
           <div class="flip-card-back">
-            <img src="assets/images/frasco-back.png" alt="Frasco 500g Atrás">
+            <img src="assets/images/frasco-bk-500g.png" alt="Frasco de miel 500g - atrás">
           </div>
         </div>
       </div>
       <p>Perfecto para el consumo familiar diario, práctico y fácil de usar.</p>
+      <button onclick="mostrarMensaje()">Lo quiero</button>
     </div>
 
-
-
-    <div class="producto">
-      <img src="assets/images/frasco-1000g.png" alt="Miel 1000g" />
-      <h3>Miel Céspedes 1000g</h3>
+    <div class="product-card">
+      <h3>Miel de Abeja 1000g</h3>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/frasco-1000g.png" alt="Frasco de miel 1000g - frente">
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/images/frasco-bk-1000g.png" alt="Frasco de miel 1000g - atrás">
+          </div>
+        </div>
+      </div>
       <p>Formato familiar. El sabor del trópico en cada cucharada.</p>
       <button onclick="mostrarMensaje()">Lo quiero</button>
     </div>
-    <div class="producto">
-      <img src="assets/images/frasco-2000g.png" alt="Miel 2000g" />
-      <h3>Miel Céspedes 2000g</h3>
+
+    <div class="product-card">
+      <h3>Miel de Abeja 2000g</h3>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/frasco-2000g.png" alt="Frasco de miel 2000g - frente">
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/images/frasco-bk-2000g.png" alt="Frasco de miel 2000g - atrás">
+          </div>
+        </div>
+      </div>
       <p>Ideal para consumo frecuente o compartir.</p>
       <button onclick="mostrarMensaje()">Lo quiero</button>
     </div>
   </div>
 </section>
-
-
 
 <section class="section" id="faq">
   <h2>Preguntas Frecuentes</h2>
@@ -107,7 +115,6 @@
   </div>
 </section>
 
-
 <section class="section" id="video">
   <h2>Conoce Nuestro Apiario</h2>
   <div class="video-container">
@@ -118,18 +125,8 @@
   </div>
 </section>
 
-<section class="section" id="formulario-contacto">
-  <h2>Contáctanos</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Nombre" required>
-    <input type="email" placeholder="Correo electrónico" required>
-    <textarea placeholder="Escribe tu mensaje..." rows="5" required></textarea>
-    <button type="submit">Enviar mensaje</button>
-  </form>
-</section>
-
 <section class="section" id="contacto">
-  <h2>Contacto</h2>
+  <h2>Contáctanos</h2>
   <form action="mailto:tuemail@dominio.com" method="post" enctype="text/plain">
     <input type="text" name="nombre" placeholder="Tu nombre" required />
     <input type="text" name="contacto" placeholder="Correo o WhatsApp" required />
@@ -138,61 +135,32 @@
   </form>
 </section>
 
-<footer>
-  <p>Apiario Céspedes © 2025</p>
-
 <section class="section" id="galeria">
   <h2>Galería</h2>
   <div class="galeria">
-    <img src="assets/images/recoleccion.png" alt="Colmena natural" />
-    <img src="assets/images/recoleccion.png" alt="Recolección de miel" />
-    <img src="assets/images/recoleccion.png" alt="Producto final" />
+    <img src="assets/images/recoleccion.png" alt="Colmena natural">
+    <img src="assets/images/recoleccion.png" alt="Recolección de miel">
+    <img src="assets/images/recoleccion.png" alt="Producto final">
   </div>
 </section>
+
 <section class="section" id="testimonios">
   <h2>Testimonios</h2>
   <div class="testimonios">
     <blockquote>
       <p>"La mejor miel que he probado, auténtica y deliciosa."</p>
-      <footer>– Carla M., Cochabamba
+      <footer>– Carla M., Cochabamba</footer>
     </blockquote>
     <blockquote>
       <p>"El sabor es increíble, y el frasco es muy práctico."</p>
-      <footer>– Juan C., Santa Cruz
+      <footer>– Juan C., Santa Cruz</footer>
     </blockquote>
     <blockquote>
       <p>"Se nota que es una miel hecha con cuidado. ¡Me encantó!"</p>
-      <footer>– Daniela R., La Paz
+      <footer>– Daniela R., La Paz</footer>
     </blockquote>
   </div>
 </section>
-
-
-<script src="script.js"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const items = document.querySelectorAll(".faq-item h3");
-    items.forEach(item => {
-      item.addEventListener("click", () => {
-        const p = item.nextElementSibling;
-        p.style.display = (p.style.display === "block") ? "none" : "block";
-      });
-    });
-
-    // Inicialmente ocultar todos los párrafos
-    document.querySelectorAll(".faq-item p").forEach(p => p.style.display = "none");
-  });
-</script>
-
-
-<a href="https://wa.me/59167521705?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20su%20miel" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
-</body>
-</html>
-
 
 <footer class="footer">
   <div class="footer-content">
@@ -206,7 +174,11 @@
   </div>
 </footer>
 
+<a href="https://wa.me/59167521705?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20su%20miel" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
+<script src="script.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const items = document.querySelectorAll(".faq-item h3");
@@ -216,16 +188,8 @@
         p.style.display = (p.style.display === "block") ? "none" : "block";
       });
     });
-
-    // Inicialmente ocultar todos los párrafos
     document.querySelectorAll(".faq-item p").forEach(p => p.style.display = "none");
   });
 </script>
-
-
-<a href="https://wa.me/59167521705?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20su%20miel" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
 </body>
 </html>
